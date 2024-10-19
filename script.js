@@ -24,9 +24,7 @@ function updateCountdown() {
         temp = countSecondsToTarget([[22,0,5,40], [11,0,11, 45 ], [16,0,16, 45], [6,0,6,30], [19,30,22,0]]);
     }else if (cope == 5){
         temp = countSecondsToTarget([[22,0,5,40], [11,0,11, 45 ], [16,0,16, 45], [6,0,6,30], [19,30,22,0]]);
-        console.log("Before: "+ formatSeconds(temp))
         temp -= subtractSaturday();
-        console.log("After" + formatSeconds(temp))
     }else if (cope == 6){
         temp = countSecondsToTarget([[22,0,5,40], [11,0,11, 45 ], [16,0,16, 45], [6,0,6,30], [19,30,22,0], [5,40,6,0],  [6,30,8,0]]);
         temp -= subtractSaturday();
@@ -165,7 +163,7 @@ function subtractSaturday(){
                 return  9900
             }
             const start = new Date(now);
-            start.setHours(16, 0, 0, 0); // Set time to 19:30:00
+            start.setHours(16, 45, 0, 0); // Set time to 19:30:00
             
 
             if (now < start){
