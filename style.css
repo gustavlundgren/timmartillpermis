@@ -18,7 +18,7 @@ body {
 
 .countdown-container {
     text-align: center;
-    color: #20C20E;
+    color: #1e8d12;
     margin-bottom: 40px;
 }
 
@@ -65,7 +65,7 @@ h1 {
     position: absolute;
     white-space: nowrap;
     font-size: 2rem;
-    color: #20C20E;
+    color: #1e8d12;
     animation: floatText 10s linear forwards; /* Ensure animation lasts 10s */
     animation-delay: 0s;  /* No delay, starts immediately */
 }
