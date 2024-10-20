@@ -153,7 +153,7 @@ function subtractSaturday(){
     
     //Ensure that the end date is after the current date
     if (endDate <= now) {
-        return false; 
+        return 0; 
         //No time left to find a Saturday
     }
 
