@@ -148,7 +148,7 @@ function calculateSleepingSeconds(aHour, aMinute, bHour, bMinute, endDate) {
 
 function subtractSaturday(){
     const now = new Date();
-    endDate= new Date(now.getFullYear(), 9, 24, 14, 0, 0);
+    endDate   = new Date(now.getFullYear(), 9, 24, 14, 0, 0);
     
     
     //Ensure that the end date is after the current date
@@ -191,6 +191,7 @@ function subtractSaturday(){
 
         currentDate.setDate(currentDate.getDate() + 1);
     }
+    return 0;
 
 }
 
