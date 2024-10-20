@@ -54,7 +54,7 @@ function setCopeLevels(event) {
 
     const elementId = event.srcElement.id;
 
-    document.getElementById(elementId).innerText = document.getElementById(elementId).innerText == "False" ? "True" : "False";
+    document.getElementById(elementId).innerText = document.getElementById(elementId).innerText == "false" ? "true" : "false";
 
     if (elementId == "cope1-btn") {
         createFloatingText(strings[0]);
