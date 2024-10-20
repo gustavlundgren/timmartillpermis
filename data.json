@@ -1,0 +1,16 @@
+[
+    {
+        "period": 7,
+        "duration": {
+            "start": "October 14, 2024 06:00:00",
+            "end": "October 24, 2024 14:10:00"
+        }
+    },
+    {
+        "period": 8,
+        "duration": {
+            "start": "October 28, 2024 06:00:00",
+            "end": "November 7, 2024 14:10:00"
+        }
+    }
+]
