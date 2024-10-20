@@ -6,6 +6,11 @@
 const countdownDate = new Date("October 24, 2024 14:10:00").getTime();
 let cope = 0;
 
+
+const cope1Btn = document.getElementById("cope1-btn");
+const cope2Btn = document.getElementById("cope2-btn");
+
+
 // Function to choose what period you're in
 async function getDateByPeriod() {
     let permisData = [];
@@ -36,6 +41,23 @@ async function getDateByPeriod() {
             console.log({ endDate: p.duration.end, periodNumber: p.period });
             return { endDate: p.duration.end, periodNumber: p.period };
         }
+    }
+}
+
+// TODO mimimize window
+
+cope1Btn.addEventListener("click", (event) => { setCopeLevels(event) })
+cope2Btn.addEventListener("click", (event) => { setCopeLevels(event) })
+
+function setCopeLevels(event) {
+
+
+    const elementId = event.srcElement.id;
+
+    document.getElementById(elementId).innerText = document.getElementById(elementId).innerText == "False" ? "True" : "False";
+
+    if (elementId == "cope1-btn") {
+        createFloatingText(strings[0]);
     }
 }
 
